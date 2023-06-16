@@ -31,7 +31,7 @@ const Header = () => {
           <SearchIcon className='h-6 text-gray-600' />
 
           <input
-            className='flex ml-2 items-center bg-transparent
+            className='hidden md:inline-flex ml-2 items-center bg-transparent
             outline-none placeholder-gray-500 flex-shrink'
             type="text"
             placeholder="Search Facebook" />
@@ -52,6 +52,15 @@ const Header = () => {
       </div>
 
       {/* Right   */}
+
+      <div className='flex items-center sm:space-x-2 justify-end'>
+        {/* Profile Pic  */}
+        <p className='whitespace-nowrap font-semibold pr-3 '>Joao Camba</p>
+        <ViewGridIcon className='icon' />
+        <ChatIcon className='icon' />
+        <BellIcon className='icon' />
+        <ChevronDownIcon className='icon' />
+      </div>
     </div>
   )
 }
